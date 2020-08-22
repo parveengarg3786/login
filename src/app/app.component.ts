@@ -7,8 +7,10 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "loginPage";
-
+  array = [];
   submit(a, b) {
     console.log(a, b);
+    this.array.push({ a, b });
+    console.log(this.array);
   }
 }
